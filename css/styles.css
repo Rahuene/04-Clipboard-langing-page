@@ -1,0 +1,308 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Strong Cyan: hsl(171, 66%, 44%)
+- Light Blue: hsl(233, 100%, 69%)
+
+### Neutral
+
+- Dark Grayish Blue: hsl(210, 10%, 33%)
+- Grayish Blue: hsl(201, 11%, 66%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 18px
+
+### Fonts
+
+- Family: [Bai Jamjuree](https://fonts.google.com/specimen/Bai+Jamjuree)
+- Weights: 400, 600
+
+## Icons
+
+For the social icons, you can use the SVGs provided or a font icon library. Some font icon library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --stron-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-grayish-blue: hsl(210, 10%, 33%);
+  --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body,
+header,
+footer,
+.middle_section,
+.tools,
+.tool_icon,
+.logos,
+.blacklist,
+.snippets,
+.preview,
+.bottom_buttons,
+.footer_container,
+.footer_container ul,
+[class*="button"] {
+  display: flex;
+}
+
+body {
+  width: 100%;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+  background-image: url("../images/bg-header-desktop.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header,
+main {
+  width: 650px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-grayish-blue);
+}
+
+header {
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5em;
+}
+
+main {
+  width: 700px;
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  margin: 20px 0;
+}
+h2 {
+  margin-top: 80px;
+}
+
+h3 {
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+footer {
+  width: 100vw;
+  height: 120px;
+  background-color: hsla(201, 11%, 66%, 0.1);
+  margin-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.normal_p,
+.small_p {
+  color: var(--grayish-blue);
+}
+
+.top_logo {
+  margin: 50px 0;
+}
+
+.normal_p {
+  margin-top: 30px;
+}
+
+.small_p {
+  font-size: 0.75em;
+  margin-bottom: 50px;
+  margin-top: 15px;
+}
+
+.green_button,
+.blue_button {
+  width: 180px;
+  height: 40px;
+  border: none;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 20px 0 0;
+  color: white;
+  font-size: 0.8em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.green_button {
+  background-color: var(--stron-cyan);
+  box-shadow: 0 2px 1px hsl(171, 45%, 44%);
+}
+.green_button:hover {
+  background-color: hsla(171, 66%, 44%, 0.7);
+  box-shadow: 0 2px 1px hsla(171, 45%, 44%, 0.7);
+  transition: background-color 0.3s ease;
+}
+
+.blue_button {
+  background-color: var(--light-blue);
+  box-shadow: 0 2px 1px hsl(233, 100%, 62%);
+}
+
+.blue_button:hover {
+  background-color: hsla(233, 100%, 69%, 0.7);
+  box-shadow: 0 2px 1px hsla(233, 100%, 69%, 0.7);
+  transition: background-color 0.3s ease;
+}
+.middle_section {
+  flex-direction: row;
+  width: 750px;
+  margin-top: 60px;
+}
+
+.left_monitor {
+  position: relative;
+  left: -300px;
+  height: 500px;
+  width: auto;
+}
+
+.middle_section_text {
+  text-align: left;
+  line-height: 1.5em;
+  margin-left: -200px;
+}
+
+.devices_images {
+  margin-top: 80px;
+  height: auto;
+  width: 800px;
+}
+
+.tools {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+}
+.tool_icon {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.blacklist,
+.snippets,
+.preview {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5em;
+  flex: 1;
+}
+
+.logos {
+  width: 900px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logos img {
+  height: 35px;
+  width: auto;
+}
+
+.bottom_buttons {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom_logo {
+  height: 50px;
+}
+
+.footer_container {
+  width: 900px;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_container ul {
+  list-style: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 600px;
+}
+
+.footer_container ul li {
+  flex-basis: calc(33% - 70px);
+  margin: 12px 35px 0 35px;
+}
+
+.footer_container ul li:hover {
+  color: var(--stron-cyan);
+  cursor: pointer;
+}
+
+.social_icons span {
+  margin-right: 20px;
+}
+
+.facebook_icon,
+.twitter_icon,
+.instagram_icon {
+  transition: 0.3s;
+  color: var(--dark-grayish-blue);
+}
+
+.facebook_icon:hover,
+.twitter_icon:hover,
+.instagram_icon:hover {
+  transition: 0.3s;
+  color: var(--stron-cyan);
+}
+
+#bottom_download_buttons {
+  margin-top: -40px;
+}
+
+@media (max-width: 375px) {
+  main {
+    width: 375px;
+  }
+  header,
+  main {
+    width: 100vw;
+  }
+}
